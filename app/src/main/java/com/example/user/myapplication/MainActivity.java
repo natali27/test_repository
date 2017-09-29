@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EditText editText = (EditText) findViewById(R.id.plain_text_input);
-        editText.setText("text changed double times more changes");
+        editText.setText("text changed double times more changes masterbranch change");
     }
 
     @Override
