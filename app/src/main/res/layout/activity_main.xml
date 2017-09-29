@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_margin="16dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:id="@+id/testtext"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:text="Enter text:"
+                android:layout_margin="16dp"/>
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_toRightOf="@id/testtext"
+                android:hint="Enter text"
+                android:layout_margin="16dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_below="@id/edittext"
+                android:layout_alignRight="@id/edittext"
+                android:text="Submit"
+                android:layout_margin="16dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
