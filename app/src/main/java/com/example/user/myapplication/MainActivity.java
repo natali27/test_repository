@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EditText editText = (EditText) findViewById(R.id.plain_text_input);
-        editText.setText("text changed");
+        editText.setText("text changed double times");
     }
 
     @Override
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeLanguage(String locale) {
-        Locale.setDefault(locale);
+        //Locale.setDefault(locale);
         Configuration config = new Configuration();
-        config.locale = locale;
+        //config.locale = locale;
         Resources resources = getResources();
         resources.updateConfiguration(config, resources.getDisplayMetrics());
         recreate();
